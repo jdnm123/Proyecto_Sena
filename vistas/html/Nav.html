@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="img/img-sistema/icono- empresa.png">
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../img/img-sistema/icono- empresa.png" />
+    <title>Dashboard Admin</title>
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/estilos.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-dark " id="sidebar-wrapper">
+
+            <div class="list-group list-group-flush">
+
+
+                <img class="img-perfil-user" src="../img/Usuarios/usuario.png" alt="Foto de perfil">
+
+                <h3 class="text-light title-sidebar">Nombre Usuario</h3>
+
+                <hr style=" margin: 3%;">
+
+                <a class="nav-link dropdown-toggle text-light text-light " id="navbarDropdown" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="icon-sidebar" src="../img/img-sistema/ventas.png" alt="icon-ventas"
+                        loading="lazy" />Ventas</a>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#!">Registrar Venta</a>
+                    <a class="dropdown-item" href="#!">Detalle de Venta</a>
+                </div>
+                <hr style=" margin: 3%;">
+                <a class="nav-link dropdown-toggle text-light" id="navbarDropdown" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="icon-sidebar" src="../img/img-sistema/compras.png" alt="icon-compras" loading="lazy" />
+                    Compras</a>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#!">Action</a>
+                    <a class="dropdown-item" href="#!">Another action</a>
+                </div>
+                <hr style=" margin: 3%;">
+                <a class="nav-link dropdown-toggle text-light" id="navbarDropdown" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="icon-sidebar" src="../img/img-sistema/clientes.png" alt="icon-clientes"
+                        loading="lazy" />Clientes</a>
+
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#!">Action</a>
+                    <a class="dropdown-item" href="#!">Another action</a>
+                </div>
+                <hr style=" margin: 3%;">
+                <a class="nav-link dropdown-toggle text-light" id="navbarDropdown" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="icon-sidebar" src="../img/img-sistema/proveedor.png" alt="icon-proveedores"
+                        loading="lazy" />Proveedores</a>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#!">Action</a>
+                    <a class="dropdown-item" href="#!">Another action</a>
+                </div>
+                <hr style=" margin: 3%;">
+                <a class="nav-link dropdown-toggle text-light" id="navbarDropdown" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="icon-sidebar" src="../img/img-sistema/Reportes.png" alt="icon-Reportes"
+                        loading="lazy" />Reportes</a>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#!">Action</a>
+                    <a class="dropdown-item" href="#!">Another action</a>
+                </div>
+                <hr style=" margin: 3%;">
+                <a class="nav-link dropdown-toggle text-light" id="navbarDropdown" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="icon-sidebar" src="../img/img-sistema/usuarios.png" alt="icon-usuarios"
+                        loading="lazy" />Usuarios</a>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#!">Action</a>
+                    <a class="dropdown-item" href="#!">Another action</a>
+                </div>
+                <hr style=" margin: 3%;">
+                <a class="nav-link dropdown-toggle text-light" id="navbarDropdown" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="icon-sidebar" src="../img/img-sistema/administracion.png" alt="icon-administracion"
+                        loading="lazy" />Administración</a>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#!">Action</a>
+                    <a class="dropdown-item" href="#!">Another action</a>
+                </div>
+                <hr style=" margin: 3%;">
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <button class="btn " id="sidebarToggle"><img style="height: 35px;"
+                            src="../img/img-sistema/icon-navbar.png" alt=""></button>
+
+                    <img src="../img/img-sistema/logo principal.png" width="120" height="50" alt="natutivo Logo"
+                        loading="lazy" />
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+                                        class="text-danger"><b>1</b></span>
+                                    <img src="../img/img-sistema/notificacion.png" height="25" alt="Notificación"
+                                        loading="lazy" />
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#!">Noticias 1</a>
+                                    <a class="dropdown-item" href="#!">Noticias 2</a>
+                                    <a class="dropdown-item" href="#!">Noticias 3</a>
+
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</a>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#!">Español</a>
+                                    <a class="dropdown-item" href="#!">日本語</a>
+
+                                    <a class="dropdown-item" href="#!">Français</a>
+
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Perfil</a>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#!">Cerrar</a>
+
+
+                                </div>
+                            </li>
+
+                            <a class="nav-link me-3 me-lg-0" href="#">
+                                <img src="../img/img-sistema/informacion.png" height="25" alt="Avatar" loading="lazy" />
+
+                            </a>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Page content-->
+            <div class="container-fluid">
+
+                <section class="container-vista">
+
+
+                    <h2>Registrar venta</h2>
+
+
+                    <div class="container-reg-inf">
+                        <div class="row">
+                            <div class="col" style=" border: solid #004243;margin:10px">
+                                <form>
+                                    <fieldset disabled>
+                                        <legend>Información del cliente</legend>
+                                    </fieldset>
+                                    <div class="input-group container-input-ventas">
+
+                                        <input class="input-ventas" type="text" aria-label="First name"
+                                            class="form-control" placeholder="FECHA">
+                                        <input class="input-ventas" type="text" aria-label="Last name"
+                                            class="form-control" placeholder="TIPO DOCUMENTO">
+
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-6" style=" border: solid #004243;margin:10px">
+                                <form>
+                                    <fieldset disabled>
+                                        <legend>Información de venta</legend>
+                                    </fieldset>
+                                    <div class="input-group container-input-ventas">
+
+                                        <input class="input-ventas" type="text" aria-label="First name"
+                                            class="form-control" placeholder="FECHA">
+                                        <input class="input-ventas" type="text" aria-label="Last name"
+                                            class="form-control" placeholder="TIPO DOCUMENTO">
+
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col" style=" border: solid #004243;margin:10px">
+                                <form>
+                                    <fieldset disabled>
+                                        <legend>Información del producto</legend>
+                                    </fieldset>
+
+                                    <div class="input-group container-input-ventas">
+
+                                        <input class="input-ventas-productos" type="text" aria-label="First name"
+                                            class="form-control" placeholder="Cod.producto">
+                                        <input class="input-ventas-productos" type="text" aria-label="Last name"
+                                            class="form-control" placeholder="nom.producto">
+                                        <input class="input-ventas-productos" type="text" aria-label="Last name"
+                                            class="form-control" placeholder="Val.producto">
+                                        <input class="input-ventas-productos" type="number" aria-label="Last name"
+                                            class="form-control" placeholder="cantidad">
+                                        <input class="btn btn-primary m-2" type="submit" value="Agregar producto">
+
+                                    </div>
+
+                                </form>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div class="row m-1">
+                        <div class="col-sm-10 container-info-venta">
+                            <table class="table align-middle mb-0 bg-white ">
+                                <thead class="bg-light">
+                                    <tr>
+                                        <th>Producto</th>
+                                        <th>Precio</th>
+                                        <th>Cantida</th>
+                                        <th>iva</th>
+                                        <th>sub total</th>
+                                    </tr>
+                                </thead>
+
+
+
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="../img/img-sistema/leche colanta.jpg" alt=""
+                                                    style="width: 45px; height: 45px" class="rounded-circle" />
+                                                <div class="ms-3">
+                                                    <p class="fw-bold mb-1">Leche Entera colanta</p>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$3.200</p>
+
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">01</p>
+
+
+                                        </td>
+                                        <td>19%</td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$2.592</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="..//img/img-sistema/jabon rey.jpg" class="rounded-circle"
+                                                    alt="" style="width: 45px; height: 45px" />
+                                                <div class="ms-3">
+                                                    <p class="fw-bold mb-1">Jabon rey</p>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$1.200</p>
+
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">01</p>
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">19%</p>
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$1.092</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="../img/img-sistema/arroz roa.jpg" class="rounded-circle"
+                                                    alt="" style="width: 45px; height: 45px" />
+                                                <div class="ms-3">
+                                                    <p class="fw-bold mb-1">Arroz roa</p>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$1300</p>
+
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">01</p>
+
+                                        </td>
+                                        <td>19%</td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$1.092</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="../img/img-sistema/leche colanta.jpg" alt=""
+                                                    style="width: 45px; height: 45px" class="rounded-circle" />
+                                                <div class="ms-3">
+                                                    <p class="fw-bold mb-1">Leche Entera colanta</p>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$3.200</p>
+
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">01</p>
+                                        </td>
+                                        <td>19%</td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$2.592</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="..//img/img-sistema/jabon rey.jpg" class="rounded-circle"
+                                                    alt="" style="width: 45px; height: 45px" />
+                                                <div class="ms-3">
+                                                    <p class="fw-bold mb-1">Jabon rey</p>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$1.200</p>
+
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$1.200</p>
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">19%</p>
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$1.092</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="../img/img-sistema/arroz roa.jpg" class="rounded-circle"
+                                                    alt="" style="width: 45px; height: 45px" />
+                                                <div class="ms-3">
+                                                    <p class="fw-bold mb-1">Arroz roa</p>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$1300</p>
+
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">01</p>
+                                        </td>
+                                        <td>19%</td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$1.092</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="../img/img-sistema/leche colanta.jpg" alt=""
+                                                    style="width: 45px; height: 45px" class="rounded-circle" />
+                                                <div class="ms-3">
+                                                    <p class="fw-bold mb-1">Leche Entera colanta</p>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$3.200</p>
+
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">01</p>
+                                        </td>
+                                        <td>19%</td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$2.592</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="..//img/img-sistema/jabon rey.jpg" class="rounded-circle"
+                                                    alt="" style="width: 45px; height: 45px" />
+                                                <div class="ms-3">
+                                                    <p class="fw-bold mb-1">Jabon rey</p>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$1.200</p>
+
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$1.200</p>
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">19%</p>
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$1.092</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="../img/img-sistema/arroz roa.jpg" class="rounded-circle"
+                                                    alt="" style="width: 45px; height: 45px" />
+                                                <div class="ms-3">
+                                                    <p class="fw-bold mb-1">Arroz roa</p>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$1300</p>
+
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">01</p>
+                                        </td>
+                                        <td>19%</td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$1.092</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="../img/img-sistema/leche colanta.jpg" alt=""
+                                                    style="width: 45px; height: 45px" class="rounded-circle" />
+                                                <div class="ms-3">
+                                                    <p class="fw-bold mb-1">Leche Entera colanta</p>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$3.200</p>
+
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">01</p>
+                                        </td>
+                                        <td>19%</td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$2.592</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="..//img/img-sistema/jabon rey.jpg" class="rounded-circle"
+                                                    alt="" style="width: 45px; height: 45px" />
+                                                <div class="ms-3">
+                                                    <p class="fw-bold mb-1">Jabon rey</p>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$1.200</p>
+
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$1.200</p>
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">19%</p>
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$1.092</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="../img/img-sistema/arroz roa.jpg" class="rounded-circle"
+                                                    alt="" style="width: 45px; height: 45px" />
+                                                <div class="ms-3">
+                                                    <p class="fw-bold mb-1">Arroz roa</p>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$1300</p>
+
+                                        </td>
+                                        <td>
+                                            <p class="fw-normal mb-1">01</p>
+                                        </td>
+                                        <td>19%</td>
+                                        <td>
+                                            <p class="fw-normal mb-1">$1.092</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                        <div class="col-sm-2">
+                            <label style="margin-top: 90%" for="">Total a pagar</label>
+                            <input type="text" name="total_a_pagar"><br>
+
+                            <label for="">Paga con</label><br>
+                            <input type="text" name="Paga_con"><br>
+
+                            <label for="">Cambio</label><br>
+                            <input type="text" name="cambio">
+
+                            <input class="btn btn-primary m-2" type="submit" value="Crear venta">
+                        </div>
+                    </div>
+
+
+                </section>
+
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="../js/scripts.js"></script>
+</body>
+
+</html>
